@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var appMod = require('../app');
 var models = require("../models");
 var debug = require('debug')('hilmc:server');
 var http = require('http');
@@ -12,6 +12,8 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
+
+ appMod(function (app) {
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
@@ -93,4 +95,4 @@ function normalizePort(val) {
   return false;
 }
 
-
+});

@@ -1,0 +1,16 @@
+{
+    "mysql": {
+        "database": "hilmc",
+        "user": "junomak",
+        "password": "adminpass"
+    },
+    "server": {
+        "port": 3000
+    },
+    "app": {
+        "layouts": true,
+        "themes": true,
+        "languages": true,
+        "root":  "/admin"
+    }
+}
